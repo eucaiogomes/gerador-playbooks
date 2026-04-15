@@ -1,0 +1,23 @@
+# Lector Playbook Converter - Dependencies
+# Instalar com: pip install -r requirements.txt
+
+# Framework de agentes
+crewai>=0.86.0
+crewai-tools>=0.17.0
+
+# Manipulação de DOCX
+python-docx>=1.1.0
+
+# CLI e UI
+click>=8.1.0
+rich>=13.7.0
+
+# Modelos e templates
+pydantic>=2.0.0
+jinja2>=3.1.0
+
+# Processamento de imagens
+pillow>=10.0.0
+
+# Configuração
+python-dotenv>=1.0.0

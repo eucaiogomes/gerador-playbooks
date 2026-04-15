@@ -1,0 +1,29 @@
+# Lector Playbook Converter
+# Sistema multi-agente para converter documentos DOCX em playbooks profissionais
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lector-playbook-converter"
+version = "1.0.0"
+description = "Converte documentos Word em playbooks profissionais com identidade visual Lector"
+requires-python = ">=3.10"
+dependencies = [
+    "crewai>=0.86.0",
+    "crewai-tools>=0.17.0",
+    "python-docx>=1.1.0",
+    "click>=8.1.0",
+    "rich>=13.7.0",
+    "pydantic>=2.0.0",
+    "jinja2>=3.1.0",
+    "pillow>=10.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+lector-playbook = "src.main:cli"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
